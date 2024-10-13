@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Manrope&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'IBM Plex Mono', 'Manrope',sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+h1{
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    height: 765px;
+    padding: 30px 0 95px;
+    margin-bottom: 150px;
+    background-image: url(../resources/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 250px;
+}
+
+.header__menu__list{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: #ffffff;
+
+}
+
+.header__menu__list-item{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.header__menu__list-item:before{
+    position: absolute;
+    left: -0.7em;
+    content: ">";
+    color: transparent;
+}
+
+.header__menu__list-item:hover{
+    text-shadow: 0 0 2px #1BFF07;
+    margin-left: 0.5em;
+    outline: none;
+    position: relative;
+    transition: 0.3s ease all;
+    transform: scale(1.25);
+}
+
+.header__inner{
+    width: 130px;
+    height: 39px;
+    background-color: #000;
+    border-radius: 100px;
+    padding: 5px 7px;
+}
+    
+.header__logo{
+    width: 120px;
+    color: #1BFF07;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -0.11em;
+    text-transform: uppercase;
+}
+
+
+.header__wrapper__text{
+    width: 430px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.header__wrapper__title{
+    width: 919px;
+    font-size: 80px;
+    line-height: 87%;
+    color: #1bff07;
+    position: relative;
+    /* cursor: pointer; */
+}
+
+.header__wrapper__title::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: 0.5s; 
+}
+
+.header__wrapper__title:hover::after{
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 3px; 
+    background-color: #1bff07; 
+    transition: 0.5s; 
+}
+
